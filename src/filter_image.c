@@ -229,25 +229,20 @@ image *sobel_image(image im)
 
 image colorize_sobel(image im)
 {
-    // image im1=make_image(im.w,im.h,im.c);
-    // image im2=make_image(im.w,im.h,im.c);
-    // image im_m=make_image(im.w,im.h,im.c);
-    // image im_g=make_image(im.w,im.h,im.c);
-    // image *im_t;
+     image im1=make_image(im.w,im.h,im.c);
+     image im2=make_image(im.w,im.h,im.c);
+     image im_m=make_image(im.w,im.h,im.c);
+     image im_g=make_image(im.w,im.h,im.c);
+     image *im_t;
 
-    // im_t=sobel_image(im);
-    // im_m=im_t[0];
-    // im_g=im_t[1];
+    im_t=sobel_image(im);
+     im_m=im_t[0];
+     im_g=im_t[1];
 
-    // im1=copy_image(im);
-    // im2=copy_image(im);
+     im1=copy_image(im);
+     im2=copy_image(im);
 
-    // rgb_to_hsv(im2);
+     rgb_to_hsv(im2);
 
-    // for(int i=0;i<im.h;i++){
-    //     for(int j=0;j<im.w;j++){
-    //         im2.data
-    //     }
-    // }
     return make_image(1,1,1);
 }
